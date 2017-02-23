@@ -1,0 +1,19 @@
+GENIUS ( THE KAYNE OF APIs )
+
+API Clients
+Default-api-app-imagelyricsborneEdit
+
+APP WEBSITE URL
+http://www.lyricsborne.me
+
+REDIRECT URI
+
+lyricsborne.me
+CLIENT ID
+S2zF921ZTjknMB0HXGx4OqBVfI4SZ5QJNx30fIrxCFPGU3gwraVYTy_0aE8intkN
+
+CLIENT SECRET
+lLXli3N9C5d_LhZK1BpI3fe3mE9N5QCygZeFOoXIGlIL4O6fSMR3Pw2akpAtwjhCL9AAUgvM0GOca4F3vB2Iag
+
+CLIENT ACCESS TOKEN
+zVd6jL3FASm1gjIxkeIYLrmrtLE2SGXosQC3_j7voq25Wn3cSSktjp9zvM_nxXD0

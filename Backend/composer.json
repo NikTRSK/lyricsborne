@@ -1,0 +1,17 @@
+{
+    "name": "lyricsborne/backend",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Nikica Trajkovski",
+            "email": "trajkovs@usc.edu"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"Genius\\": "src/Genius"}
+    }
+}
