@@ -24,6 +24,7 @@ class ProcessData
 
   public function __construct() {
     $this->geniusAPI = new \Genius\Genius('zVd6jL3FASm1gjIxkeIYLrmrtLE2SGXosQC3_j7voq25Wn3cSSktjp9zvM_nxXD0');
+    $this->stopwords = array_flip($this->stopwords);
     $this->mArtists = array();
   }
   /*
@@ -111,14 +112,30 @@ class ProcessData
           $lyricWords = preg_split('/[ ,;:()]+/', $finalResult);
 
         }
-        print_r($lyricWords);
+//        print_r($lyricWords);
         $wordCount = array_count_values($lyricWords);
-        print_r($wordCount);
-        // Drop Stop words
-
-        // Add the song into the mSongsMap
+//        print_r($wordCount);
+        // Drop Stop words ignoring case
+        $filteredOutWords = array_diff_ukey($wordCount, $this->stopwords, 'strcasecmp');
+        print_r(sizeof($wordCount). ", ". sizeof($filteredOutWords)."\n");
+        print_r($filteredOutWords);
+        // Create the song
         $song = new Song($songName, $artist, $lyricUrl, $wordCount);
+
+        // add the song to mSongsMap
+        foreach ($wordCount as $key => $value) {
+          $this->mSongsMap[$key][] = $song
+        }
+
         // Merge the wordCount with mWordMap
+        foreach ($wordCount as $key => $value) {
+          if (array_key_exists(strtolower($key), $this->mWordMap))
+            $this->mWordMap[$key] += $value;
+          else
+            $this->mWordMap = array_merge($this->mWordMap, array($key=>strtolower($value)));
+        }
+
+        // Increase created song count
         $songCount++;
       }
       $nextPage = $searchResult->next_page;
