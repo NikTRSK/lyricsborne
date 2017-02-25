@@ -14,7 +14,7 @@ require ('Song.php');
 
 class ProcessData
 {
-  private $stopwords = array("a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the", ' ');
+  private $stopwords = array("a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the", ' ', '');
   private $mWordMap;
   private $mSongsMap;
   private $mArtists;
@@ -26,6 +26,7 @@ class ProcessData
     $this->geniusAPI = new \Genius\Genius('zVd6jL3FASm1gjIxkeIYLrmrtLE2SGXosQC3_j7voq25Wn3cSSktjp9zvM_nxXD0');
     $this->stopwords = array_flip($this->stopwords);
     $this->mArtists = array();
+    $this->mWordMap = array();
   }
   /*
     Queries the API for an artist name.
@@ -33,7 +34,6 @@ class ProcessData
   */
   public function searchArtist($query) {
     $artistSearch = $this->geniusAPI->search->get($query)->response->hits;
-    print_r("SIZE: ". sizeof($artistSearch). "\n");
     // Reset array
     $this->mSearchCache = array();
     $foundIDs = array(); // Stores the ids for the artists in the search cache. Used to filter out duplicates
@@ -63,7 +63,8 @@ class ProcessData
     }
     print_r( "CacheSize: ". sizeof($this->mSearchCache). "\n");
     $artist = $this->mSearchCache[$artistID];
-    array_push($this->mArtists, $artist);
+    $this->mArtists[$artist->getName()] = $artist;
+//    array_push($this->mArtists, $artist->getName() => $artist);
 //    print_r(sizeof($this->mSearchCache). "\n");
 //    print_r($artist->getID());
     $Id = $artist->getID();
@@ -75,7 +76,7 @@ class ProcessData
     $pagesExplored = 0; // Remove. Test this
     $songCount = 0;
 //    $lyrics = array();
-    while ($nextPage !== null && $songCount <= 20) {
+    while ($nextPage !== null && $songCount <= 15) {
       $pagesExplored++;
 
       $songs = $searchResult->songs;
@@ -112,25 +113,24 @@ class ProcessData
           $lyricWords = preg_split('/[ ,;:()]+/', $finalResult);
 
         }
-//        print_r($lyricWords);
+
         $wordCount = array_count_values($lyricWords);
-//        print_r($wordCount);
         // Drop Stop words ignoring case
         $filteredOutWords = array_diff_ukey($wordCount, $this->stopwords, 'strcasecmp');
-        print_r(sizeof($wordCount). ", ". sizeof($filteredOutWords)."\n");
-        print_r($filteredOutWords);
         // Create the song
         $song = new Song($songName, $artist, $lyricUrl, $wordCount);
+        $artist->addSong($song);
 
         // add the song to mSongsMap
-        foreach ($wordCount as $key => $value) {
-          $this->mSongsMap[$key][] = $song
+        foreach ($filteredOutWords as $key => $value) {
+          $this->mSongsMap[$key][] = $song;
         }
 
         // Merge the wordCount with mWordMap
-        foreach ($wordCount as $key => $value) {
-          if (array_key_exists(strtolower($key), $this->mWordMap))
-            $this->mWordMap[$key] += $value;
+        foreach ($filteredOutWords as $key => $value) {
+//          if (array_key_exists(strtolower($key), $this->mWordMap))
+          if (isset($this->mWordMap[strtolower($key)]))
+            $this->mWordMap[strtolower($key)] += $value;
           else
             $this->mWordMap = array_merge($this->mWordMap, array($key=>strtolower($value)));
         }
@@ -141,6 +141,12 @@ class ProcessData
       $nextPage = $searchResult->next_page;
       $searchResult = $this->geniusAPI->artists->getSongs($Id, 50, $nextPage)->response;
     }
+
+//    echo "SONGS MAP\n";
+//    var_dump($this->mSongsMap);
+    echo "WORDS MAP\n";
+    var_dump($this->mWordMap);
+    return $this->mWordMap;
   }
 
   /*
@@ -157,6 +163,10 @@ class ProcessData
     Returns a lyric link for a song from an artist
   */
   public function getLyrics($songTitle, $artistName) {
-
+    foreach ($this->mArtists[$artistName]->getSongs() as $s) {
+      if ($s->getTitle() == $songTitle)
+        return $s->getLyricsLink();
+    }
+    return null;
   }
 }

@@ -17,6 +17,8 @@ class Artist
       $this->mID = $id;
       $this->mName = $name;
       $this->mImageURL = $imageURL;
+
+      $this->mSongs = array();
     }
 
     public function getID() {
