@@ -33,14 +33,16 @@ class ProcessData
     Returns an array of artists
   */
   public function searchArtist($query) {
+    // Query the API for an artist name
     $artistSearch = $this->geniusAPI->search->get($query)->response->hits;
-    // Reset array
+    // Reset the cache array
     $this->mSearchCache = array();
     $foundIDs = array(); // Stores the ids for the artists in the search cache. Used to filter out duplicates
+    // Look over all the results and find the artists that match the query
     foreach($artistSearch as $artist) {
       $artistID = $artist->result->primary_artist->id;
       $artistName = $artist->result->primary_artist->name;
-      // If we haven't found the artist create it
+      // If we haven't found the artist in the mSearchCache create it
       if (stripos($query, $artistName) !== false && in_array($artistID, $foundIDs) === false) {
         $imageURL = $artist->result->primary_artist->image_url;
         $artistItem = new Artist($artistID, $artistName, $imageURL);
@@ -48,6 +50,7 @@ class ProcessData
         array_push($foundIDs, $artistID);
       }
     }
+    // Return the search results
     return $this->mSearchCache;
   }
 
@@ -57,53 +60,45 @@ class ProcessData
     and returns a map of words => frequencies
   */
   public function generateCloud($artistID) {
+    // If the $artistID is out of range terminate
     if (count($this->mSearchCache) < $artistID-1) {
-      echo "Value out of range. \n";
-      return;
+      return "artistID out of range.\n";
     }
-    print_r( "CacheSize: ". sizeof($this->mSearchCache). "\n");
+    // The  Genius API doesn't support Serialization so we have to reinitialize it.
+    $this->geniusAPI = new \Genius\Genius('zVd6jL3FASm1gjIxkeIYLrmrtLE2SGXosQC3_j7voq25Wn3cSSktjp9zvM_nxXD0');
+    // Get the artist we are generating the word cloud for
     $artist = $this->mSearchCache[$artistID];
-    $this->mArtists[$artist->getName()] = $artist;
-//    array_push($this->mArtists, $artist->getName() => $artist);
-//    print_r(sizeof($this->mSearchCache). "\n");
-//    print_r($artist->getID());
+    // Extract the ID of the artist in the Genius API
     $Id = $artist->getID();
-    // Get all songs for the artist
+    // Get all songs for the artist. (artistId, songsPerPage, pageNumber)
     $searchResult = $this->geniusAPI->artists->getSongs($Id, 50, 1)->response;
-//    print_r($searchResult);
     // Parse through all the lyrics
-    $nextPage = 1;
-    $pagesExplored = 0; // Remove. Test this
+    $nextPage = 1; // Tracks the next available page
     $songCount = 0;
-//    $lyrics = array();
+    // We are limiting the search to only 15 songs to speed up responce time.
     while ($nextPage !== null && $songCount <= 15) {
-      $pagesExplored++;
-
+      // Get all the songs from a page. Genius returns 50 songs max per page
       $songs = $searchResult->songs;
-      print_r($songCount. ", ". $pagesExplored.  "\n");
       foreach($songs as $s) {
         // Absolute Path to the song
         $songName = $s->title; // song title
         $lyricUrl = $s->url; // url of the lyrics
         print_r($lyricUrl ."\n");
-//        $lyricPath = $s->path;
         // Artist ID. Used to drop featured Artists
         $songArtistID = $s->primary_artist->id; // artistID of the song
 
         // Skip the song if artist is not the primary artist
-        print_r($Id. " | ". $songArtistID . "\n");
         if ($Id !== $songArtistID) continue;
 
-//        print_r($lyricUrl); print("\r\n");
         // Get the HTML of the song
         $html = str_get_html(file_get_contents($lyricUrl));
         // If we can't open the HTML, skip
         if ($html === false) {
-          echo "Couldn't open $lyricUrl \n";
+//          echo "Couldn't open $lyricUrl \n"; // DEBUG ONLY: Output error message if html empty (lyrics don't exits)
           continue;
         }
-//        $searchTerm = ('a[href/*=' . $lyricPath . ']');
-        $lyrics = array();
+
+        // Extract only the lyrics from the html
         $lyricWords = array();
         foreach ($html->find('lyrics') as $l) {
           $tagsRemoved = (preg_replace('/(?s)<.+?>/', ' ', $l->innertext));
@@ -111,13 +106,19 @@ class ProcessData
           $finalResult = preg_replace('/(?s)\[.+?\]/', ' ', $tagsRemoved);
           // Split the string into individual words
           $lyricWords = preg_split('/[ ,;:()]+/', $finalResult);
-
         }
 
+        // Convert array to lowercase
+        array_walk($lyricWords, function(&$value)
+        {
+          $value = strtolower($value);
+        });
+
+        // count the word occurencies
         $wordCount = array_count_values($lyricWords);
-        // Drop Stop words ignoring case
-        $filteredOutWords = array_diff_ukey($wordCount, $this->stopwords, 'strcasecmp');
-        // Create the song
+        // Drop Stop words
+        $filteredOutWords = array_diff_key($wordCount, $this->stopwords);
+        // Create the song and assign it to the artist
         $song = new Song($songName, $artist, $lyricUrl, $wordCount);
         $artist->addSong($song);
 
@@ -128,7 +129,6 @@ class ProcessData
 
         // Merge the wordCount with mWordMap
         foreach ($filteredOutWords as $key => $value) {
-//          if (array_key_exists(strtolower($key), $this->mWordMap))
           if (isset($this->mWordMap[strtolower($key)]))
             $this->mWordMap[strtolower($key)] += $value;
           else
@@ -138,14 +138,13 @@ class ProcessData
         // Increase created song count
         $songCount++;
       }
+      // Search the next page
       $nextPage = $searchResult->next_page;
       $searchResult = $this->geniusAPI->artists->getSongs($Id, 50, $nextPage)->response;
     }
-
-//    echo "SONGS MAP\n";
-//    var_dump($this->mSongsMap);
-    echo "WORDS MAP\n";
-    var_dump($this->mWordMap);
+    // Push the artist into the mArtists array
+    $this->mArtists[$artist->getName()] = $artist;
+    // Return the word => frequencies map
     return $this->mWordMap;
   }
 

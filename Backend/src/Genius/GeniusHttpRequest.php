@@ -30,6 +30,7 @@ class GeniusHttpRequest {
     }
 
     public function get($url, $params = array()){
+//        print_r($this->curl." ". CURLOPT_HTTPGET." ". 1);
         curl_setopt($this->curl, CURLOPT_HTTPGET, 1);
         curl_setopt($this->curl, CURLOPT_URL, $this->genius_api_base_url . $url . '?' . http_build_query($params));
         return $this->exec();

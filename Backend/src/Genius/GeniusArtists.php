@@ -37,6 +37,8 @@ class GeniusArtists {
      * @param string $sort title (default) or popularity
      */
     public function getSongs( $artist_id, $per_page = 20, $page = 1, $sort = 'title' ){
+        print_r($artist_id . " is artist id \n");
+//        print_r( (instanceof) $artist_id) ;
         return json_decode(
             $this->http_request->get(
                 '/artists/' . $artist_id . '/songs', array(
