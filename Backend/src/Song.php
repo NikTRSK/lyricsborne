@@ -6,7 +6,7 @@
  * Date: 2/11/2017
  * Time: 5:05 PM
  */
-class Song
+class Song implements JsonSerializable
 {
   private $mTitle;
   private $mArtist;
@@ -26,5 +26,11 @@ class Song
 
   public function getLyricsLink() {
     return $this->mLyricLink;
+  }
+
+  // function called when encoded with json_encode
+  public function jsonSerialize()
+  {
+    return get_object_vars($this);
   }
 }

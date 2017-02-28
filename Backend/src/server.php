@@ -10,21 +10,22 @@ if ( isset($_GET["artistName"]) ) {
   $_SESSION['dataProessor'] = $dataProessor;
   $result = $_SESSION['dataProessor']->searchArtist($_GET["artistName"]);
   $_SESSION['dataProessor'] = serialize($dataProessor);
-  echo json_encode(/*serialize*/($result));
+  echo json_encode($result);
 }
 else if ( isset($_GET["artistID"]) ) {
   // Return word map for artist
   $processor = unserialize($_SESSION['dataProessor']);
   $result = $processor->generateCloud($_GET['artistID']);
   $_SESSION['dataProessor'] = serialize($processor);
-  echo serialize($result);
+  var_dump($result);
+//  echo json_encode($result);
 }
 else if ( isset($_GET["word"]) ) {
   // Return songs that match a word
   $processor = unserialize($_SESSION['dataProessor']);
   $songList = $processor->getSongs($_GET["word"]);
   $_SESSION['dataProessor'] = serialize($processor);
-  echo serialize($songList);
+  echo json_encode($songList);
 }
 else if ( $_GET["songTitle"] && $_GET["artistName"] ) {
   // Return lyric link for a song
