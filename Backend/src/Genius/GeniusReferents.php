@@ -30,8 +30,6 @@ class GeniusReferents {
         if( (!is_null($songs_id) && !is_null($web_page_id)) || (is_null($song_id) && is_null($web_page_id)) ){
             throw new GeniusReferentsException("You need to set one of required IDs.");
         }
-//        echo "GENIUS IS AN ASS\n";
-//        print_($text_format. "\n");
         return json_decode(
             $this->http_request->get(
                 '/referents', array(

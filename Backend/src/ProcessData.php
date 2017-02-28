@@ -75,15 +75,15 @@ class ProcessData
     // Parse through all the lyrics
     $nextPage = 1; // Tracks the next available page
     $songCount = 0;
-    // We are limiting the search to only 15 songs to speed up responce time.
-    while ($nextPage !== null && $songCount <= 15) {
+    // We are limiting the search to only 10 songs to speed up responce time.
+    while ($nextPage !== null && $songCount <= 10) {
       // Get all the songs from a page. Genius returns 50 songs max per page
       $songs = $searchResult->songs;
       foreach($songs as $s) {
         // Absolute Path to the song
         $songName = $s->title; // song title
         $lyricUrl = $s->url; // url of the lyrics
-        print_r($lyricUrl ."\n");
+//        print_r($lyricUrl ."\n");
         // Artist ID. Used to drop featured Artists
         $songArtistID = $s->primary_artist->id; // artistID of the song
 

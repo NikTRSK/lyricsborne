@@ -1,49 +1,28 @@
 <?php
 session_start(); // This has to be on the top. Initializes a session
 
-// Generate a list of stop words on load
-
-///* Testing Genius API */
 require_once('../vendor/autoload.php');
-//require ('simple_html_dom.php');
 require ('ProcessData.php');
-
-//$dp = new ProcessData();
-//$result = $dp->searchArtist('Kendrick Lamar');
-//$s = $dp->generateCloud(0);
-
-//$dataProessor = new ProcessData();
-//$_SESSION['dataProessor'] = $dataProessor;
-//print_r($_SESSION);
 
 if ( isset($_GET["artistName"]) ) {
   $dataProessor = new ProcessData();
   $_SESSION['dataProessor'] = $dataProessor;
-  print_r($_GET["artistName"]. "\n");
-//  $dataProessor = unserialize($_SESSION['dataProessor']);
-//  var_dump($_SESSION['dataProessor']);
+  print_r($_GET["artistName"]. "\n"); // take this out
   $result = $_SESSION['dataProessor']->searchArtist($_GET["artistName"]);
-//  $_SESSION['dataProessor'] = $dataProessor;
   $_SESSION['dataProessor'] = serialize($dataProessor);
-  print_r(serialize($result));
-//  echo json_encode($result);
-echo "\n\n\n";
-  echo json_encode((array)$result[0]);
+//  print_r(serialize($result));
+//echo "\n\n\n";
+  echo (serialize($result));
 
 }
 else if ( isset($_GET["artistID"]) ) {
-  // return artist
-//  print_r($_GET["artistID"]. "\n");
-//  $dataProessor = unserialize($_SESSION['dataProessor']);
-//  $wordmap = $_SESSION['dataProessor']->generateCloud($_GET["artistID"]);
-//  print_r($_SESSION);
+  // Return word map for artist
+  print_r($_GET["artistID"]. "\n");
   $wordmap = unserialize($_SESSION['dataProessor']);
 
 //  $dp = new ProcessData();
 //  $result = $dp->searchArtist('Kendrick Lamar');
   $result = $wordmap->generateCloud(/*$_GET['artistID']*/0);
-
-  print_r(get_class($wordmap));
 
 //  echo "DONE\n";
 
