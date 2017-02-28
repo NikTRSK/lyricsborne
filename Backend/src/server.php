@@ -10,7 +10,7 @@ if ( isset($_GET["artistName"]) ) {
   $_SESSION['dataProessor'] = $dataProessor;
   $result = $_SESSION['dataProessor']->searchArtist($_GET["artistName"]);
   $_SESSION['dataProessor'] = serialize($dataProessor);
-  echo serialize($result);
+  echo json_encode(/*serialize*/($result));
 }
 else if ( isset($_GET["artistID"]) ) {
   // Return word map for artist
