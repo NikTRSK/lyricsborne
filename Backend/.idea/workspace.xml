@@ -20,8 +20,18 @@
           <file leaf-file-name="server.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/server.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                <state relative-caret-position="99">
+                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MapJSONEncode.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/MapJSONEncode.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="561">
+                  <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -72,8 +82,8 @@
           <file leaf-file-name="ProcessData.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ProcessData.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="611">
-                  <caret line="146" column="41" lean-forward="false" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
+                <state relative-caret-position="561">
+                  <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
                   <folding>
                     <element signature="e#7#88#0#PHP" expanded="true" />
                   </folding>
@@ -113,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/Genius/GeniusArtists.php" />
         <option value="$PROJECT_DIR$/src/Artist.php" />
         <option value="$PROJECT_DIR$/src/Song.php" />
+        <option value="$PROJECT_DIR$/src/MapJSONEncode.php" />
         <option value="$PROJECT_DIR$/src/ProcessData.php" />
         <option value="$PROJECT_DIR$/src/server.php" />
       </list>
@@ -319,12 +330,12 @@
       <workItem from="1487838525152" duration="14766000" />
       <workItem from="1487995336664" duration="7867000" />
       <workItem from="1488056166173" duration="11222000" />
-      <workItem from="1488227729090" duration="5252000" />
+      <workItem from="1488227729090" duration="7287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100401000" />
+    <option name="totallyTimeSpent" value="102436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="3854" height="2091" extended-state="0" />
@@ -366,16 +377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ProcessData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -729,10 +730,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapJSONEncode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProcessData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="146" column="41" lean-forward="false" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
+        <state relative-caret-position="561">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="e#7#88#0#PHP" expanded="true" />
           </folding>
@@ -741,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

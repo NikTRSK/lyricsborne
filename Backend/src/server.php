@@ -1,8 +1,10 @@
 <?php
 session_start(); // This has to be on the top. Initializes a session
+error_reporting(E_ERROR | E_PARSE);
 
 require_once('../vendor/autoload.php');
 require ('ProcessData.php');
+require ('MapJSONEncode.php');
 
 if ( isset($_GET["artistName"]) ) {
   // Return a list of valid artists
@@ -17,8 +19,10 @@ else if ( isset($_GET["artistID"]) ) {
   $processor = unserialize($_SESSION['dataProessor']);
   $result = $processor->generateCloud($_GET['artistID']);
   $_SESSION['dataProessor'] = serialize($processor);
-  var_dump($result);
-//  echo json_encode($result);
+  echo var_dump($result);
+//  echo array_values($result);
+//  $test = ["key1" => "value1", "key2" => "value2"];
+//  echo json_encode(new MapJSONEncode($result), JSON_PRETTY_PRINT);
 }
 else if ( isset($_GET["word"]) ) {
   // Return songs that match a word
