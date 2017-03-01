@@ -19,24 +19,23 @@ else if ( isset($_GET["artistID"]) ) {
   $processor = unserialize($_SESSION['dataProessor']);
   $result = $processor->generateCloud($_GET['artistID']);
   $_SESSION['dataProessor'] = serialize($processor);
-  echo var_dump($result);
-//  echo array_values($result);
-//  $test = ["key1" => "value1", "key2" => "value2"];
-//  echo json_encode(new MapJSONEncode($result), JSON_PRETTY_PRINT);
+  arsort($result);
+  echo json_encode(new MapJSONEncode(array_slice($result,0,250)), JSON_PRETTY_PRINT);
 }
 else if ( isset($_GET["word"]) ) {
   // Return songs that match a word
   $processor = unserialize($_SESSION['dataProessor']);
   $songList = $processor->getSongs($_GET["word"]);
   $_SESSION['dataProessor'] = serialize($processor);
-  echo json_encode($songList);
+//  var_dump($songList);
+  echo json_encode(new MapJSONEncode($songList), JSON_PRETTY_PRINT);
 }
-else if ( $_GET["songTitle"] && $_GET["artistName"] ) {
+else if ( $_GET["song"] && $_GET["artist"] ) {
   // Return lyric link for a song
   $processor = unserialize($_SESSION['dataProessor']);
-  $lyircs = $processor->getLyrics($_GET["songTitle"], $_GET["artistName"]);
+  $lyircs = $processor->getLyrics($_GET["song"], $_GET["artist"]);
   $_SESSION['dataProessor'] = serialize($processor);
-  echo serialize($lyircs);
+  echo json_encode($lyircs);
 }
 else {
   echo "lyricsBorne API\nInvalid query\n";

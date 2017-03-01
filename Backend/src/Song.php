@@ -28,6 +28,10 @@ class Song implements JsonSerializable
     return $this->mLyricLink;
   }
 
+  public function getOccurenceOf($word) {
+    return $this->mWordMap[$word];
+  }
+
   // function called when encoded with json_encode
   public function jsonSerialize()
   {
