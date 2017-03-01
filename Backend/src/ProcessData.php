@@ -83,7 +83,6 @@ class ProcessData
         // Absolute Path to the song
         $songName = $s->title; // song title
         $lyricUrl = $s->url; // url of the lyrics
-//        print_r($lyricUrl ."\n");
         // Artist ID. Used to drop featured Artists
         $songArtistID = $s->primary_artist->id; // artistID of the song
 
@@ -118,7 +117,7 @@ class ProcessData
         $wordCount = array_count_values($lyricWords);
         // Splice the array before pushing it to the song list
         asort($wordCount);
-        $wordCount = array_slice($wordCount, 0, 250);
+        $wordCount = array_slice($wordCount, 0, 200);
 
         // Drop Stop words
         $filteredOutWords = array_diff_key($wordCount, $this->stopwords);
@@ -159,10 +158,12 @@ class ProcessData
   public function getSongs($word) {
     $songs = $this->mSongsMap[$word];
     $results = array();
+    // Populate an array with song names, occurences, and artist name
     foreach($songs as $song) {
-      array_push($results, array($song->getTitle() => $song->getOccurenceOf($word)));
+      $toAdd[0] = array();
+      $toAdd[0] = [$song->getTitle(), $song->getOccurenceOf($word), $song->getArtist()];
+      array_push($results, $toAdd[0]);
     }
-    // ?? Error handling ??
     return $results;
   }
 
@@ -171,8 +172,22 @@ class ProcessData
   */
   public function getLyrics($songTitle, $artistName) {
     foreach ($this->mArtists[$artistName]->getSongs() as $s) {
-      if ($s->getTitle() == $songTitle)
-        return $s->getLyricsLink();
+      if ($s->getTitle() == $songTitle) {
+        // Get the HTML of the song
+        $lyricLink = $s->getLyricsLink();
+        $html = str_get_html(file_get_contents($lyricLink));
+        // If we can't open the HTML, skip
+        if ($html === false) {
+          return "Couldn't open $lyricLink \n"; // DEBUG ONLY: Output error message if html empty (lyrics don't exits)
+        }
+        // Extract only the lyrics from the html
+        foreach ($html->find('lyrics') as $l) {
+          $tagsRemoved = (preg_replace('/(?s)<.+?>/', ' ', $l->innertext));
+          // Remove extras ( <br>, </a>, [..] )
+          $finalResult = preg_replace('/(?s)\[.+?\]/', ' ', $tagsRemoved);
+          return $finalResult;
+        }
+      }
     }
     return null;
   }

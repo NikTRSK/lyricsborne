@@ -32,6 +32,10 @@ class Song implements JsonSerializable
     return $this->mWordMap[$word];
   }
 
+  public function getArtist() {
+    return $this->mArtist->getName();
+  }
+
   // function called when encoded with json_encode
   public function jsonSerialize()
   {
