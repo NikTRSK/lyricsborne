@@ -100,8 +100,9 @@ class ProcessData
         // Extract only the lyrics from the html
         $lyricWords = array();
         foreach ($html->find('lyrics') as $l) {
-          $tagsRemoved = (preg_replace('/(?s)<.+?>/', ' ', $l->innertext));
           // Remove extras ( <br>, </a>, [..] )
+          $tagsRemoved = (preg_replace('/(?s)<.+?>/', ' ', $l->innertext));
+          // Remove extra verse tags
           $finalResult = preg_replace('/(?s)\[.+?\]/', ' ', $tagsRemoved);
           // Split the string into individual words
           $lyricWords = preg_split('/[ ,;:()]+/', $finalResult);
@@ -182,10 +183,8 @@ class ProcessData
         }
         // Extract only the lyrics from the html
         foreach ($html->find('lyrics') as $l) {
-          $tagsRemoved = (preg_replace('/(?s)<.+?>/', ' ', $l->innertext));
-          // Remove extras ( <br>, </a>, [..] )
-          $finalResult = preg_replace('/(?s)\[.+?\]/', ' ', $tagsRemoved);
-          return $finalResult;
+          $tagsRemoved = (preg_replace('/(?s)<[^br].+?>/', ' ', $l->innertext));
+          return $tagsRemoved;
         }
       }
     }
