@@ -15,6 +15,7 @@ class MapJSONEncode implements JsonSerializable
 
   public function jsonSerialize()
   {
+//    return $this->array;
     return $this->array;
   }
 }

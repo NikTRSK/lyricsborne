@@ -20,7 +20,8 @@ else if ( isset($_GET["artistID"]) ) {
   $result = $processor->generateCloud($_GET['artistID']);
   $_SESSION['dataProessor'] = serialize($processor);
   arsort($result);
-  echo json_encode(new MapJSONEncode(array_slice($result,0,250)), JSON_PRETTY_PRINT);
+//  echo json_encode(new MapJSONEncode(array_slice($result,0,250)), JSON_PRETTY_PRINT);
+  echo json_encode(array_slice($result,0,250), JSON_PRETTY_PRINT);
 }
 else if ( isset($_GET["word"]) ) {
   // Return songs that match a word
