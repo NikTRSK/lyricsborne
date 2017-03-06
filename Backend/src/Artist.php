@@ -33,7 +33,7 @@ class Artist implements JsonSerializable
         array_push($this->mSongs, $song);
     }
 
-    public function getSongs() {
+    public function getSongs( ) {
         return $this->mSongs;
     }
 
