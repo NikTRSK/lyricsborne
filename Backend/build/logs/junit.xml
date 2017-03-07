@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests" tests="13" assertions="9" failures="0" errors="0" time="0.005040">
-    <testsuite name="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" tests="12" assertions="9" failures="0" errors="0" time="0.005019">
-      <testcase name="testGetIDReturnsValidID" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="15" assertions="1" time="0.004450"/>
-      <testcase name="testGetIDInvalidIDReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="24" assertions="1" time="0.000049"/>
-      <testcase name="testGetNameReturnsValidName" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="34" assertions="1" time="0.000023"/>
-      <testcase name="testGetNameInvalidNameReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="43" assertions="1" time="0.000021"/>
-      <testcase name="testGetSongsReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="53" assertions="0" time="0.000014"/>
-      <testcase name="testGetSongsReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="57" assertions="0" time="0.000013"/>
-      <testcase name="testAddSongSingleAddReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="62" assertions="1" time="0.000024"/>
-      <testcase name="testAddSongMultipleAddReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="71" assertions="1" time="0.000023"/>
-      <testcase name="testAddSongNothingAddedReturnsEmpty" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="82" assertions="1" time="0.000288"/>
-      <testcase name="testGetImageLinkReturnsValidLink" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="89" assertions="1" time="0.000031"/>
-      <testcase name="testGetImageLinkInvalidReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="98" assertions="1" time="0.000021"/>
-      <testcase name="testJsonSerializeOutputsFormatedObject" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\ArtistTest.php" line="108" assertions="0" time="0.000062"/>
+  <testsuite name="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src" tests="13" assertions="9" failures="0" errors="0" time="0.005651">
+    <testsuite name="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" tests="12" assertions="9" failures="0" errors="0" time="0.005626">
+      <testcase name="testGetIDReturnsValidID" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="15" assertions="1" time="0.005037"/>
+      <testcase name="testGetIDInvalidIDReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="24" assertions="1" time="0.000040"/>
+      <testcase name="testGetNameReturnsValidName" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="34" assertions="1" time="0.000028"/>
+      <testcase name="testGetNameInvalidNameReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="43" assertions="1" time="0.000024"/>
+      <testcase name="testGetSongsReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="53" assertions="0" time="0.000016"/>
+      <testcase name="testGetSongsReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="57" assertions="0" time="0.000015"/>
+      <testcase name="testAddSongSingleAddReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="62" assertions="1" time="0.000028"/>
+      <testcase name="testAddSongMultipleAddReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="71" assertions="1" time="0.000027"/>
+      <testcase name="testAddSongNothingAddedReturnsEmpty" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="82" assertions="1" time="0.000342"/>
+      <testcase name="testGetImageLinkReturnsValidLink" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="89" assertions="1" time="0.000029"/>
+      <testcase name="testGetImageLinkInvalidReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="98" assertions="1" time="0.000025"/>
+      <testcase name="testJsonSerializeOutputsFormatedObject" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="108" assertions="0" time="0.000015"/>
     </testsuite>
-    <testsuite name="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\SongTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.000021">
-      <testcase name="testSongWTF" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\tests\SongTest.php" line="5" assertions="0" time="0.000021"/>
+    <testsuite name="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.000025">
+      <testcase name="testSongWTF" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="5" assertions="0" time="0.000025"/>
     </testsuite>
   </testsuite>
 </testsuites>
