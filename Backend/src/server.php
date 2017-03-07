@@ -3,7 +3,7 @@ session_start(); // This has to be on the top. Initializes a session
 error_reporting(E_ERROR | E_PARSE);
 
 require_once('../vendor/autoload.php');
-require ('ProcessData.php');
+require('ProcessData.php');
 require ('MapJSONEncode.php');
 
 if ( isset($_GET["artistName"]) ) {

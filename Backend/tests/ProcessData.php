@@ -8,9 +8,9 @@
  */
 
 require_once('../vendor/autoload.php');
-require ('simple_html_dom.php');
-require ('Artist.php');
-require ('Song.php');
+require('simple_html_dom.php');
+require('Artist.php');
+require('Song.php');
 
 class ProcessData
 {

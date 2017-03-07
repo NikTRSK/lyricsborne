@@ -105,4 +105,10 @@ class ArtistTest extends PHPUnit_Framework_TestCase
   }
 
   /* jsonSerialize */
+  public function testJsonSerializeOutputsFormatedObject() {
+//    $artist = new Artist(1, "Test artist", "https://test.com/albums/some-song");
+//
+//    var_dump(json_encode($artist), JSON_PRETTY_PRINT);
+    // IDK how to test this
+  }
 }
