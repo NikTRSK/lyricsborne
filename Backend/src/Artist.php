@@ -41,6 +41,9 @@ class Artist implements JsonSerializable
         return $this->mImageURL;
     }
 
+  /**
+   * @codeCoverageIgnore
+   */
     // function called when encoded with json_encode
     public function jsonSerialize()
     {

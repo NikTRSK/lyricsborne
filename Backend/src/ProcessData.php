@@ -61,8 +61,8 @@ class ProcessData
   */
   public function generateCloud($artistID) {
     // If the $artistID is out of range terminate
-    if (count($this->mSearchCache) < $artistID-1) {
-      return "artistID out of range.\n";
+    if (!array_key_exists($artistID, $this->mSearchCache)) {
+      throw new InvalidArgumentException('artistID out of range.\n');
     }
     // The  Genius API doesn't support Serialization so we have to reinitialize it.
     $this->geniusAPI = new \Genius\Genius('zVd6jL3FASm1gjIxkeIYLrmrtLE2SGXosQC3_j7voq25Wn3cSSktjp9zvM_nxXD0');
@@ -157,15 +157,17 @@ class ProcessData
     contain the word
   */
   public function getSongs($word) {
-    $songs = $this->mSongsMap[$word];
     $results = array();
-    // Populate an array with song names, occurences, and artist name
-    foreach($songs as $song) {
-      $toAdd[0] = array();
-      $toAdd[0] = [$song->getTitle(), $song->getOccurenceOf($word), $song->getArtist()];
-      array_push($results, $toAdd[0]);
+    if (array_key_exists($word, $this->mSongsMap)) {
+      $songs = $this->mSongsMap[$word];
+      // Populate an array with song names, occurences, and artist name
+      foreach ($songs as $song) {
+        $toAdd[0] = array();
+        $toAdd[0] = [$song->getTitle(), $song->getOccurenceOf($word), $song->getArtist()];
+        array_push($results, $toAdd[0]);
+      }
     }
-    return $results;
+      return $results;
   }
 
   /*

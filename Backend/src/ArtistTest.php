@@ -27,7 +27,7 @@ class ArtistTest extends PHPUnit_Framework_TestCase
     $link = "https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city";
     $artist = new Artist($id, $artistName, $link);
 
-    $this->assertEquals(null, $artist->getName());
+    $this->assertNull($artist->getName());
   }
 
   /* getName tests */
@@ -46,20 +46,10 @@ class ArtistTest extends PHPUnit_Framework_TestCase
     $link = "https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city";
     $artist = new Artist($id, $artistName, $link);
 
-    $this->assertEquals(null, $artist->getName());
+    $this->assertNull($artist->getName());
   }
 
-  /* getSongs tests */
-  public function testGetSongsReturnsSingleSong() {
-    $id = 1421;
-    $artistName = null;
-    $link = "https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city";
-    $artist = new Artist($id, $artistName, $link);
-
-    $this->assertEquals(null, $artist->getName());
-  }
-
-  /* addSong */
+  /* addSong, getSongs */
   public function testAddSongSingleAddReturnsSingleSong() {
     $song = new Song(null, null, null, null);
     $artist = new Artist(null, null, null);
@@ -102,14 +92,6 @@ class ArtistTest extends PHPUnit_Framework_TestCase
     $link = null;
     $artist = new Artist($id, $artistName, $link);
 
-    $this->assertEquals(null, $artist->getImageLink());
-  }
-
-  /* jsonSerialize */
-  public function testJsonSerializeOutputsFormatedObject() {
-//    $artist = new Artist(1, "Test artist", "https://test.com/albums/some-song");
-//
-//    var_dump(json_encode($artist), JSON_PRETTY_PRINT);
-    // IDK how to test this
+    $this->assertNull($artist->getImageLink());
   }
 }

@@ -29,13 +29,20 @@ class Song implements JsonSerializable
   }
 
   public function getOccurenceOf($word) {
-    return $this->mWordMap[$word];
+    if (isset($this->mWordMap[$word]))
+      return $this->mWordMap[$word];
+    return null;
   }
 
   public function getArtist() {
-    return $this->mArtist->getName();
+    if ($this->mArtist)
+      return $this->mArtist->getName();
+    return null;
   }
 
+  /**
+   * @codeCoverageIgnore
+   */
   // function called when encoded with json_encode
   public function jsonSerialize()
   {

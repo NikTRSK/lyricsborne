@@ -28,10 +28,10 @@ class ProcessDataTest extends PHPUnit_Framework_TestCase
 
   public function testGenerateCloudEmptyReturnsAError() {
     $dataProcessor = new ProcessData();
-    $dataProcessor->searchArtist("sgnkd");
-    $wordMap = $dataProcessor->generateCloud(0);
+    echo count($dataProcessor->searchArtist("sgnkd"));
 
-    $this->assertNotEmpty($wordMap);
+    $this->setExpectedException(InvalidArgumentException::class);
+    $dataProcessor->generateCloud(0);
   }
 
   public function testGetSongsReturnsSongs() {
@@ -56,7 +56,7 @@ class ProcessDataTest extends PHPUnit_Framework_TestCase
     $dataProcessor = new ProcessData();
     $dataProcessor->searchArtist("Metallica");
     $dataProcessor->generateCloud(0);
-    $result = $dataProcessor->getLyrics("Enter+Sandman", "Metallica");
+    $result = $dataProcessor->getLyrics("One", "Metallica");
 
     $this->assertNotEmpty($result);
   }

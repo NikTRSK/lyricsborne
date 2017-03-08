@@ -29,6 +29,8 @@
       <directory suffix=".php">tests</directory>
       <exclude>
         <file>vendor/Autoload.php</file>
+        <file>src/simple_html_dom.php</file>
+        <directory>src/Genius</directory>
         <file>PHPUnit/Framework/Assert/Functions.php</file>
       </exclude>
     </whitelist>
