@@ -56,7 +56,7 @@ class ProcessDataTest extends PHPUnit_Framework_TestCase
     $dataProcessor = new ProcessData();
     $dataProcessor->searchArtist("Metallica");
     $dataProcessor->generateCloud(0);
-    $result = $dataProcessor->getLyrics("One", "Metallica");
+    $result = $dataProcessor->getLyrics("Attitude", "Metallica");
 
     $this->assertNotEmpty($result);
   }
