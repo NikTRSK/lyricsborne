@@ -7,10 +7,10 @@
  * Time: 5:05 PM
  */
 
-require_once('../vendor/autoload.php');
-require('simple_html_dom.php');
-require('Artist.php');
-require('Song.php');
+//require_once('../vendor/autoload.php');
+require_once('simple_html_dom.php');
+require_once('Artist.php');
+require_once('Song.php');
 
 class ProcessData
 {

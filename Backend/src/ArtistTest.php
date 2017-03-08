@@ -51,11 +51,12 @@ class ArtistTest extends PHPUnit_Framework_TestCase
 
   /* getSongs tests */
   public function testGetSongsReturnsSingleSong() {
+    $id = 1421;
+    $artistName = null;
+    $link = "https://genius.com/albums/Kendrick-lamar/Good-kid-m-a-a-d-city";
+    $artist = new Artist($id, $artistName, $link);
 
-  }
-
-  public function testGetSongsReturnsMultipleSongs() {
-
+    $this->assertEquals(null, $artist->getName());
   }
 
   /* addSong */
