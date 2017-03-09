@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/3.7/phpunit.xsd"
-         bootstrap="vendor/Autoload.php"
+         bootstrap="vendor/autoload.php"
          backupGlobals="false"
          verbose="true">
   <testsuites>
@@ -13,6 +13,7 @@
       <directory suffix="Test.php">Tests/Runner</directory>
       <directory suffix=".phpt">Tests/TextUI</directory>
       <directory suffix="Test.php">Tests/Util</directory>
+      <directory suffic=".php">src</directory>
     </testsuite>
   </testsuites>
 
@@ -26,12 +27,17 @@
 
   <filter>
     <whitelist processUncoveredFilesFromWhitelist="true">
-      <directory suffix=".php">tests</directory>
+      <directory suffix=".php">src</directory>
       <exclude>
-        <file>vendor/Autoload.php</file>
+        <file>vendor/autoload.php</file>
         <file>src/simple_html_dom.php</file>
         <directory>src/Genius</directory>
         <file>PHPUnit/Framework/Assert/Functions.php</file>
+        <file>src/server.php</file>
+        <file>src/MapJSONEncode.php</file>
+        <file>src/ArtistTest.php</file>
+        <file>src/SongTest.php</file>
+        <file>src/ProcessDataTest.php</file>
       </exclude>
     </whitelist>
 

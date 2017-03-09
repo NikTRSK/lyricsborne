@@ -94,7 +94,7 @@ class ProcessData
         // If we can't open the HTML, skip
         if ($html === false) {
 //          echo "Couldn't open $lyricUrl \n"; // DEBUG ONLY: Output error message if html empty (lyrics don't exits)
-          continue;
+//          continue;
         }
 
         // Extract only the lyrics from the html
@@ -180,13 +180,12 @@ class ProcessData
         $lyricLink = $s->getLyricsLink();
         $html = str_get_html(file_get_contents($lyricLink));
         // If we can't open the HTML, skip
-        if ($html === false) {
-          return "Couldn't open $lyricLink \n"; // DEBUG ONLY: Output error message if html empty (lyrics don't exits)
-        }
-        // Extract only the lyrics from the html
-        foreach ($html->find('lyrics') as $l) {
-          $tagsRemoved = (preg_replace('/(?s)<[^br].+?>/', ' ', $l->innertext));
-          return $tagsRemoved;
+        if ($html !== false) {
+          // Extract only the lyrics from the html
+          foreach ($html->find('lyrics') as $l) {
+            $tagsRemoved = (preg_replace('/(?s)<[^br].+?>/', ' ', $l->innertext));
+            return $tagsRemoved;
+          }
         }
       }
     }

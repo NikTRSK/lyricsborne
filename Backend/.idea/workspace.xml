@@ -17,11 +17,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.45506328">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-          <file leaf-file-name="ProcessData.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ProcessData.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ProcessData.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="269">
-                  <caret line="176" column="62" lean-forward="false" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
+                <state relative-caret-position="627">
+                  <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
                   <folding>
                     <element signature="e#7#88#0#PHP" expanded="true" />
                   </folding>
@@ -29,21 +29,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="451">
-                  <caret line="986" column="0" lean-forward="false" selection-start-line="986" selection-start-column="0" selection-end-line="986" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Song.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Song.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Song.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+                <state relative-caret-position="792">
+                  <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="48" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -82,7 +72,7 @@
           <file leaf-file-name="Artist.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Artist.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1011">
+                <state relative-caret-position="1485">
                   <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
                   <folding />
                 </state>
@@ -92,8 +82,8 @@
           <file leaf-file-name="server.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/server.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="396">
+                  <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -106,18 +96,18 @@
           <file leaf-file-name="SongTest.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/SongTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1947">
-                  <caret line="59" column="40" lean-forward="false" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+                <state relative-caret-position="726">
+                  <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ProcessDataTest.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ProcessDataTest.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ProcessDataTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state relative-caret-position="462">
+                  <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -126,18 +116,18 @@
           <file leaf-file-name="ArtistTest.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ArtistTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="957">
-                  <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+                <state relative-caret-position="924">
+                  <caret line="98" column="46" lean-forward="false" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="65" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="phpunit.xml.dist" pinned="false" current-in-tab="false">
+          <file leaf-file-name="phpunit.xml.dist" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+                <state relative-caret-position="891">
+                  <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -161,6 +151,7 @@
       <find>mArtists</find>
       <find>print_</find>
       <find>slice</find>
+      <find>continu</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -180,13 +171,14 @@
         <option value="C:/php/php.ini" />
         <option value="$PROJECT_DIR$/tests/ArtistTest.php" />
         <option value="$PROJECT_DIR$/tests/ProcessDataTest.php" />
-        <option value="$PROJECT_DIR$/src/SongTest.php" />
         <option value="$PROJECT_DIR$/src/Artist.php" />
         <option value="$PROJECT_DIR$/src/Song.php" />
-        <option value="$PROJECT_DIR$/src/ArtistTest.php" />
-        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/src/ProcessData.php" />
+        <option value="$PROJECT_DIR$/src/serverTest.php" />
         <option value="$PROJECT_DIR$/src/ProcessDataTest.php" />
+        <option value="$PROJECT_DIR$/src/ArtistTest.php" />
+        <option value="$PROJECT_DIR$/src/SongTest.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
       </list>
     </option>
   </component>
@@ -205,7 +197,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-13" />
     <option name="y" value="-13" />
-    <option name="width" value="3866" />
+    <option name="width" value="3854" />
     <option name="height" value="2106" />
   </component>
   <component name="ProjectView">
@@ -224,7 +216,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,6 +258,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,7 +266,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.phpunit" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Nick/Documents/!Code/lyricsborne/Backend/src/Song.php" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/autoload.php" />
@@ -292,9 +284,6 @@
     <configuration default="false" name="server.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Backend/src/server.php">
       <method />
     </configuration>
-    <configuration default="false" name="phpinfo.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Backend/phpinfo.php">
-      <method />
-    </configuration>
     <configuration default="false" name="server.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/server.php">
       <method />
     </configuration>
@@ -303,6 +292,10 @@
     </configuration>
     <configuration default="false" name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/tests" />
+      <method />
+    </configuration>
+    <configuration default="false" name="serverTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="serverTest" file="$PROJECT_DIR$/src/serverTest.php" scope="Class" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -368,18 +361,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.lyricsborne_test" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.server.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.phpinfo.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.server.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.ProcessData.php" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.tests" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.server.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.ProcessData.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.tests" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.serverTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.server.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.tests" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.server.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.ProcessData.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.phpinfo.php" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.serverTest" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.server.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.tests" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.server.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.ProcessData.php" />
       </list>
     </recent_temporary>
   </component>
@@ -411,32 +404,14 @@
       <workItem from="1488773107829" duration="7989000" />
       <workItem from="1488854647341" duration="3751000" />
       <workItem from="1488923920750" duration="3981000" />
-      <workItem from="1488942177469" duration="8213000" />
+      <workItem from="1488942177469" duration="11593000" />
+      <workItem from="1489023348230" duration="703000" />
+      <workItem from="1489024092633" duration="604000" />
+      <workItem from="1489040661474" duration="2240000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 04m 44s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 06m 21s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 06m 59s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 12m 36s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 18m 26s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 21m 03s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="lyricsborne_test - 2017.03.07 at 21h 22m 35s.xml">
-      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="lyricsborne_test - 2017.03.07 at 21h 23m 20s.xml">
       <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -446,17 +421,37 @@
     <history-entry file="lyricsborne_test - 2017.03.07 at 21h 24m 58s.xml">
       <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="lyricsborne_test - 2017.03.08 at 22h 56m 46s.xml">
+      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lyricsborne_test - 2017.03.08 at 22h 56m 59s.xml">
+      <configuration name="lyricsborne_test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="serverTest - 2017.03.08 at 22h 34m 13s.xml">
+      <configuration name="serverTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="serverTest - 2017.03.08 at 22h 36m 59s.xml">
+      <configuration name="serverTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="serverTest - 2017.03.08 at 22h 38m 59s.xml">
+      <configuration name="serverTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="serverTest - 2017.03.08 at 22h 45m 34s.xml">
+      <configuration name="serverTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="serverTest - 2017.03.08 at 22h 56m 08s.xml">
+      <configuration name="serverTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140703000" />
+    <option name="totallyTimeSpent" value="147630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
+    <frame x="-13" y="-13" width="3854" height="2106" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16871002" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17433155" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -467,6 +462,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -490,20 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Genius/GeniusSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Genius/GeniusHttpRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Artist.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -678,22 +660,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Artist.php" />
+    <entry file="file://$PROJECT_DIR$/tests/Song.php" />
     <entry file="file://$PROJECT_DIR$/src/simple_html_dom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -740,22 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="986" column="0" lean-forward="false" selection-start-line="986" selection-start-column="0" selection-end-line="986" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -766,58 +718,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Artist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1011">
+        <state relative-caret-position="1485">
           <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SongTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1947">
-          <caret line="59" column="40" lean-forward="false" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+        <state relative-caret-position="1693">
+          <caret line="986" column="0" lean-forward="false" selection-start-line="986" selection-start-column="0" selection-end-line="986" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArtistTest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Extensions/PhptTestSuite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProcessData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="176" column="62" lean-forward="false" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
+        <state relative-caret-position="627">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="e#7#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProcessDataTest.php">
+    <entry file="file://$PROJECT_DIR$/src/serverTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProcessDataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="48" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArtistTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="98" column="46" lean-forward="false" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SongTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
         </state>
       </provider>

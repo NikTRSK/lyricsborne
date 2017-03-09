@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src" tests="19" assertions="19" failures="0" errors="0" time="23.046631">
-    <testsuite name="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.005185">
-      <testcase name="testGetIDReturnsValidID" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="15" assertions="1" time="0.004330"/>
-      <testcase name="testGetIDInvalidIDReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="24" assertions="1" time="0.000355"/>
-      <testcase name="testGetNameReturnsValidName" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="34" assertions="1" time="0.000029"/>
-      <testcase name="testGetNameInvalidNameReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="43" assertions="1" time="0.000018"/>
-      <testcase name="testAddSongSingleAddReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="53" assertions="1" time="0.000027"/>
-      <testcase name="testAddSongMultipleAddReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="62" assertions="1" time="0.000026"/>
-      <testcase name="testAddSongNothingAddedReturnsEmpty" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="73" assertions="1" time="0.000340"/>
-      <testcase name="testGetImageLinkReturnsValidLink" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="80" assertions="1" time="0.000041"/>
-      <testcase name="testGetImageLinkInvalidReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="89" assertions="1" time="0.000019"/>
+  <testsuite name="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src" tests="18" assertions="18" failures="0" errors="0" time="0.006388">
+    <testsuite name="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.005249">
+      <testcase name="testGetIDReturnsValidID" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="15" assertions="1" time="0.004481"/>
+      <testcase name="testGetIDInvalidIDReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="24" assertions="1" time="0.000299"/>
+      <testcase name="testGetNameReturnsValidName" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="34" assertions="1" time="0.000054"/>
+      <testcase name="testGetNameInvalidNameReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="43" assertions="1" time="0.000019"/>
+      <testcase name="testAddSongSingleAddReturnsSingleSong" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="53" assertions="1" time="0.000038"/>
+      <testcase name="testAddSongMultipleAddReturnsMultipleSongs" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="62" assertions="1" time="0.000025"/>
+      <testcase name="testAddSongNothingAddedReturnsEmpty" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="73" assertions="1" time="0.000291"/>
+      <testcase name="testGetImageLinkReturnsValidLink" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="80" assertions="1" time="0.000025"/>
+      <testcase name="testGetImageLinkInvalidReturnsNULL" class="ArtistTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ArtistTest.php" line="89" assertions="1" time="0.000017"/>
     </testsuite>
-    <testsuite name="ProcessDataTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ProcessDataTest.php" tests="2" assertions="2" failures="0" errors="0" time="23.040759">
-      <testcase name="testGetLyricsReturnsLyricsIfOneArtistInCloud" class="ProcessDataTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ProcessDataTest.php" line="55" assertions="1" time="13.044700"/>
-      <testcase name="testGetLyricsReturnsLyricsIfMultipleArtistInCloud" class="ProcessDataTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ProcessDataTest.php" line="64" assertions="1" time="9.996059"/>
-    </testsuite>
-    <testsuite name="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" tests="8" assertions="8" failures="0" errors="0" time="0.000687">
-      <testcase name="testGetTitleReturnsTitle" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="7" assertions="1" time="0.000143"/>
-      <testcase name="testGetTitleNonExistingTitleReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="14" assertions="1" time="0.000081"/>
-      <testcase name="testGetLyricsLinkReturnsLink" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="20" assertions="1" time="0.000094"/>
-      <testcase name="testGetLyricsLinkNonExistingLyricsReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="27" assertions="1" time="0.000067"/>
-      <testcase name="testGetOccurenceOfReturnsOccurenceForInputWord" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="33" assertions="1" time="0.000085"/>
-      <testcase name="testGetOccurenceOfReturnsOccurenceForNonexistingInputWord" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="40" assertions="1" time="0.000069"/>
-      <testcase name="testGetArtistReturnsArtist" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="47" assertions="1" time="0.000084"/>
-      <testcase name="testGetArtistNonExistringArtistReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="57" assertions="1" time="0.000064"/>
+    <testsuite name="ProcessDataTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\ProcessDataTest.php" tests="0" assertions="0" failures="0" errors="0" time="0.000000"/>
+    <testsuite name="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.001140">
+      <testcase name="testGetTitleReturnsTitle" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="7" assertions="1" time="0.000048"/>
+      <testcase name="testGetTitleNonExistingTitleReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="14" assertions="1" time="0.000024"/>
+      <testcase name="testGetLyricsLinkReturnsLink" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="20" assertions="1" time="0.000023"/>
+      <testcase name="testGetLyricsLinkNonExistingLyricsReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="27" assertions="1" time="0.000017"/>
+      <testcase name="testGetOccurenceOfReturnsOccurenceForInputWord" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="33" assertions="1" time="0.000022"/>
+      <testcase name="testGetOccurenceOfReturnsOccurenceForNonexistingInputWord" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="40" assertions="1" time="0.000017"/>
+      <testcase name="testGetArtistReturnsArtist" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="47" assertions="1" time="0.000435"/>
+      <testcase name="testGetArtistNonExistringArtistReturnsNULL" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="57" assertions="1" time="0.000021"/>
+      <testcase name="testTestJSONEncoding" class="SongTest" file="C:\Users\Nick\Documents\!Code\lyricsborne\Backend\src\SongTest.php" line="63" assertions="1" time="0.000533"/>
     </testsuite>
   </testsuite>
 </testsuites>

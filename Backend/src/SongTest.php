@@ -59,4 +59,10 @@ class SongTest extends PHPUnit_Framework_TestCase
 
     $this->assertNull($song->getArtist());
   }
+
+  public function testTestJSONEncodingEncodesTheObject() {
+    $song = new Song("song name", null, "https://genius.com/test-song", null);
+
+    $this->assertNotEmpty(json_encode($song));
+  }
 }

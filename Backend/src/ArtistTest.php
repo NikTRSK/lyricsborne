@@ -94,4 +94,10 @@ class ArtistTest extends PHPUnit_Framework_TestCase
 
     $this->assertNull($artist->getImageLink());
   }
+
+  public function testJSONEncodingEncodesTheObject() {
+    $artist = new Artist(100, "test artist", "https://genius.com/image-link");
+
+    $this->assertNotEmpty(json_encode($artist));
+  }
 }
